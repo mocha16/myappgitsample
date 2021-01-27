@@ -1,0 +1,65 @@
+
+Label	Description
+P	    Pawn
+N	    Knight
+B	    Bishop
+R	    Rook
+Q	    Queen
+K	    King
+*E	    Empty
+
+
+
+
+
+
+
+
+
+
+
+1)	No colour segmentation + randomised angle of capture
+-	6 classes (PNBRQK) / 7classes (including empty)
+-	28x28 / 32x32 pixel
+-	White and black pcs under same label
+-	20 images/class (may include equal distribution of B+W)
+-	20x6 120 images
+-	Aspect ratio(?)
+
+2)	No colour segmentation + randomised angle of capture + design variants of pcs
+-	6 classes (PNBRQK) / 7classes (including empty)
+-	28x28 / 32x32 pixel
+-	White and black pcs under same label
+-	50/100 images/class (may include equal distribution of B+W)
+-	50x6/100x6    300/600 images
+-	Aspect ratio(?)
+
+3)	No colour segmentation + 8 direction + design variants of pcs
+-	6 classes (PNBRQK) / 7classes (including empty)
+-	28x28 / 32x32 pixel
+-	White and black pcs under same label
+-	N,S,E,W,NE,NW,SE,SW
+-	100 images/class (may include equal distribution of B+W)
+-	100x6    600 images
+-	Aspect ratio(?)
+
+4)	Binary colour segmentation +  8 direction + random panning angles  + design variants of pcs
+-	6 classes (PNBRQK) / 7classes (including empty)
+-	28x28 / 32x32  / 64x64 pixel
+-	White and black pcs different labels
+       (bl-P,bl-N,bl-B,bl-R,bl-Q,bl-K)
+	(w-P,w-N,w-B,w-R,w-Q,w-K)
+-	N,S,E,W,NE,NW,SE,SW
+-	Cam panning angles
+-	300-500 images/class (may include equal distribution of B+W)
+-	500x6    3000 images
+-	Aspect ratio(?)
+-	Extendable to 1000/class
+
+
+5)	In addition to above 
+-	Board images with different pc arrangement
+-	Pc overlapping
+-	Multiple pcs in frame
+-	Multiple pans
+-	Dataset immensely increases with more detail and specifications (tenfold increase)
