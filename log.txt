@@ -1,0 +1,2 @@
+error logs //
+content wouldn't get added as it's in gitignore
